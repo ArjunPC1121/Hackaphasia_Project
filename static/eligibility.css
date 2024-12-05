@@ -8,7 +8,7 @@ body, h1 {
 /* Body Styling */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f9f9f9;
+    background: linear-gradient(90deg, rgba(36, 6, 67, 1) 10%, rgba(106, 40, 123, 1) 50%, rgba(0, 0, 0, 1) 90%);
     color: #333;
     display: flex;
     flex-direction: column;
