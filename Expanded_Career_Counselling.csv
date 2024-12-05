@@ -1,0 +1,21 @@
+Education_Level,Field_of_Interest,Immediate_Pay_Priority,Higher_Studies_Interest,Work_Life_Balance,Risk_Appetite,Skill_Proficiency,Networking_Comfort,Job_Location_Preference,Financial_Situation,Entrepreneurship_Interest,Next_Step
+Bachelor's,Technology,Yes,No,Medium,High,8,Yes,Remote,No,Yes,Job
+Master's,Business,No,Yes,High,Medium,7,No,Local,Yes,No,Higher Studies
+High School,Arts,Yes,No,Low,Low,5,Yes,Relocation,No,Yes,Job
+Bachelor's,Medicine,No,Yes,Medium,High,9,No,Remote,Yes,No,Higher Studies
+Master's,Technology,Yes,No,High,Medium,6,Yes,Local,No,Yes,Entrepreneurship
+Bachelor's,Business,Yes,Yes,Low,Low,7,Yes,Relocation,Yes,No,Job
+Master's,Technology,No,No,Medium,High,8,No,Remote,No,Yes,Higher Studies
+High School,Arts,Yes,Yes,High,Medium,5,Yes,Local,Yes,No,Job
+Master's,Business,No,No,Low,Low,6,No,Remote,No,Yes,Higher Studies
+Bachelor's,Medicine,Yes,Yes,High,Medium,9,Yes,Relocation,Yes,No,Entrepreneurship
+Doctorate,Research,No,Yes,Medium,High,8,No,Local,Yes,Yes,Research
+High School,Technology,Yes,No,Low,Low,4,Yes,Remote,No,No,Job
+Bachelor's,Arts,No,Yes,High,Medium,6,No,Relocation,Yes,Yes,Entrepreneurship
+Bachelor's,Business,Yes,No,Medium,High,7,Yes,Local,No,No,Higher Studies
+Master's,Medicine,No,Yes,Low,Low,8,No,Remote,Yes,Yes,Job
+High School,Technology,Yes,No,High,Medium,5,Yes,Relocation,No,No,Higher Studies
+Master's,Business,No,Yes,Medium,High,9,No,Local,Yes,Yes,Job
+Bachelor's,Research,Yes,No,Low,Low,7,Yes,Remote,No,No,Research
+High School,Arts,No,Yes,High,Medium,5,No,Relocation,Yes,Yes,Entrepreneurship
+Master's,Technology,Yes,No,Medium,High,8,Yes,Local,No,No,Job

@@ -12,3 +12,7 @@ function scholarship() {
     console.log("Navigating to Scholarship..."); // Debugging step
     window.location.href = "/scholarship";
 }
+function counsel()
+{
+    window.location.href="/fillCounselForm"
+}

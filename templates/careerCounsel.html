@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Counselling Form</title>
+</head>
+<body>
+    <h2>Career Counselling Form</h2>
+    <form action="/predict" method="POST">
+        <label for="education">Education Level:</label>
+        <select name="Education_Level" id="education" required>
+            <option value="Bachelor's">Bachelor's</option>
+            <option value="Master's">Master's</option>
+            <option value="High School">High School</option>
+            <option value="Doctorate">Doctorate</option>
+        </select><br><br>
+
+        <label for="field">Field of Interest:</label>
+        <select name="Field_of_Interest" id="field" required>
+            <option value="Technology">Technology</option>
+            <option value="Business">Business</option>
+            <option value="Arts">Arts</option>
+            <option value="Medicine">Medicine</option>
+            <option value="Research">Research</option>
+        </select><br><br>
+
+        <label for="pay">Immediate Pay Priority:</label>
+        <select name="Immediate_Pay_Priority" id="pay" required>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select><br><br>
+
+        <label for="studies">Higher Studies Interest:</label>
+        <select name="Higher_Studies_Interest" id="studies" required>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select><br><br>
+
+        <label for="balance">Work-Life Balance:</label>
+        <select name="Work_Life_Balance" id="balance" required>
+            <option value="High">High</option>
+            <option value="Medium">Medium</option>
+            <option value="Low">Low</option>
+        </select><br><br>
+
+        <label for="risk">Risk Appetite:</label>
+        <select name="Risk_Appetite" id="risk" required>
+            <option value="High">High</option>
+            <option value="Medium">Medium</option>
+            <option value="Low">Low</option>
+        </select><br><br>
+
+        <label for="proficiency">Skill Proficiency (1-10):</label>
+        <input type="number" name="Skill_Proficiency" id="proficiency" min="1" max="10" required><br><br>
+
+        <label for="networking">Networking Comfort:</label>
+        <select name="Networking_Comfort" id="networking" required>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select><br><br>
+
+        <label for="location">Job Location Preference:</label>
+        <select name="Job_Location_Preference" id="location" required>
+            <option value="Remote">Remote</option>
+            <option value="Local">Local</option>
+            <option value="Relocation">Relocation</option>
+        </select><br><br>
+
+        <label for="finance">Financial Situation:</label>
+        <select name="Financial_Situation" id="finance" required>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select><br><br>
+
+        <label for="entrepreneurship">Entrepreneurship Interest:</label>
+        <select name="Entrepreneurship_Interest" id="entrepreneurship" required>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

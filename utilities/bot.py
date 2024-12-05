@@ -40,7 +40,7 @@ def schedule_daily_fact(window):
     """
     show_fact()
     # Schedule the next run after 24 hours (86400000 ms)
-    window.after(50, schedule_daily_fact, window)
+    window.after(60000, schedule_daily_fact, window)
 
 
 def start_gui():
