@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Scholarship Form</title>
+    <link rel="stylesheet" href="/static/scholarship.css">
 </head>
 <body>
-    <h2>Scholarship Application</h2>
+    <h2>Scholarship eligibility check</h2>
+    <div class="container">
     <form action="/eligibility" method="POST">
         <label for="cgpa">CGPA:</label><br>
         <input type="text" id="cgpa" name="cgpa" required><br><br>
@@ -32,6 +34,7 @@
 
         <button type="submit">Submit</button>
     </form>
+</div>
 </body>
 <script src="/static/scholarship.js"></script>
 </html>
