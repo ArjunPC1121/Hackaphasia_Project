@@ -5,7 +5,7 @@ from utilities.scholarship import train,scholarship
 from utilities.translator import translate_and_speak
 app = Flask(__name__)
 
-data = pd.read_csv("coursea_data.csv")
+data = pd.read_csv("categorized_courses.csv")
 data.drop_duplicates(inplace=True)
 data['course_difficulty'] = data['course_difficulty'].fillna('Beginner')  # Default to Beginner
 data['course_difficulty'] = data['course_difficulty'].str.capitalize()
