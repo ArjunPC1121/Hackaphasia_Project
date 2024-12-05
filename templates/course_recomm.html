@@ -4,10 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="Stylesheet" href="/static/course_recomm.css">
 </head>
 <body>
+    <h1>Recommended Courses</h1>
+    <div class=container>
     {% for course in course_recomm%}
-        <h1>{{course}}</h1>
+    <div class="con">
+        <h2 id="course_button" onclick=coursePage()>{{course}}</h2>
+    </div>
     {%endfor%}
+    </div>
 </body>
+<script src="/static/course_recomm.js"></script>
 </html>
