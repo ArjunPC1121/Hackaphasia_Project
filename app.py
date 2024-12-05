@@ -50,8 +50,7 @@ def translate_page():
     
 @app.route("/courses")
 def courses():
-    #print("Courses")
-    return "Courses Page"
+    return render_template("courses.html")
 
 @app.route("/scholarship")
 def scholarship_page():

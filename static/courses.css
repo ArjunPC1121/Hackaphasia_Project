@@ -1,0 +1,80 @@
+/* Basic Reset */
+* {
+    margin: 20px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Style */
+body {
+    font-family: 'Arial', sans-serif;
+    background: rgb(36,6,67);
+    background: linear-gradient(90deg, rgba(36,6,67,1) 10%, rgba(106,40,123,1) 50%, rgba(0,0,0,1) 90%);
+    color: white;
+    display: flex; /* Change to flexbox */
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Full screen height */
+    text-align: center;
+    flex-direction: column; /* Arrange containers vertically */
+    gap: 50px; /* 50px gap between each container */
+}
+
+/* Container Style */
+.container {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 30px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center;
+    align-items: center;
+}
+
+/* Heading Style */
+h1 {
+    font-size: 2.5rem;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    font-weight: bold;
+    text-shadow: 2px 2px 8px rgba(141, 34, 176, 0.8);
+}
+
+/* Button Style */
+button {
+    background-color: #ffffff; /* Blue button color */
+    color: rgb(29, 2, 41);
+    border: none;
+    padding: 15px 30px;
+    margin: 15px 0; /* Vertical spacing for buttons */
+    font-size: 1.2rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%; /* Full width buttons */
+}
+
+/* Button Hover Effect */
+button:hover {
+    background-color: #dac1ef; /* Darker blue on hover */
+    transform: translateY(-2px); /* Button lift effect */
+}
+
+/* Button Active Effect */
+button:active {
+    transform: translateY(2px); /* Button press effect */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    button {
+        font-size: 1rem;
+    }
+}
