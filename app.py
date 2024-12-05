@@ -3,12 +3,23 @@ import pandas as pd
 from utilities.quiz import recommend_by_difficulty
 from utilities.scholarship import train,scholarship
 from utilities.translator import translate_and_speak
+from utilities.bot import start_gui
+import threading
+
 app = Flask(__name__)
+
 
 dataset = pd.read_csv("categorized_courses.csv")
 dataset.drop_duplicates(inplace=True)
 dataset['course_difficulty'] = dataset['course_difficulty'].fillna('Beginner')  # Default to Beginner
 dataset['course_difficulty'] = dataset['course_difficulty'].str.capitalize()
+
+
+def run_tkinter_gui():
+    start_gui()
+
+tkinter_thread = threading.Thread(target=run_tkinter_gui, daemon=True)
+tkinter_thread.start()
 
 @app.route("/")
 @app.route("/home")
