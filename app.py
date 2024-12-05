@@ -155,7 +155,7 @@ def predict():
         decoded_prediction = train_encoder.inverse_transform(prediction)
 
         # Return the result
-        return f"<h3>Recommended Next Step: {decoded_prediction[0]}</h3>"
+        return render_template("nextStep.html",rez=decoded_prediction[0])
 
     except Exception as e:
         return f"<h3>Error: {str(e)}</h3>"

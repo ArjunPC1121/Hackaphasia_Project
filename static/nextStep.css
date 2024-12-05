@@ -1,0 +1,14 @@
+body{
+    vertical-align: middle;
+    background: linear-gradient(90deg, rgba(36,6,67,1) 10%, rgba(106,40,123,1) 50%, rgba(0,0,0,1) 90%);
+}
+h1{
+    margin-top: 290px;
+    vertical-align: middle;
+    color: white;
+    text-align: center;
+    
+    border:solid 2pt white ;
+    padding:20px ;
+    
+}
