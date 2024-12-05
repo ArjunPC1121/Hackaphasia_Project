@@ -7,9 +7,9 @@ def train():
     # Dummy data for scholarships and students
     scholarship_data = {
         'scholarship_id': [1, 2, 3, 4, 5],
-        'name': ['Scholarship A', 'Scholarship B', 'Scholarship C', 'Scholarship D', 'Scholarship E'],
+        'name': ['National Scholarship Portal (NSP)', 'Vanier Canada Graduate Scholarships', 'Gates Cambridge Scholarship', 'Fulbright Foreign Student Program', 'Rotary Foundation Global Scholarship Grants'],
         'min_cgpa': [3.0, 3.5, 3.2, 3.8, 2.5],
-        'required_citizen': ['US', 'Canada', 'Any', 'India', 'Any'],
+        'required_citizen': ['India', 'Canada', 'Any', 'USA', 'Any'],
         'max_income': [50000, 60000, 100000, 70000, 80000],
         'preferred_degree': ['Bachelors', 'Masters', 'Bachelors', 'Bachelors', 'Any']
     }

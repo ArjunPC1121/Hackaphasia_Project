@@ -1,0 +1,94 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Style */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(90deg, rgba(36, 6, 67, 1) 10%, rgba(106, 40, 123, 1) 50%, rgba(0, 0, 0, 1) 90%);
+    color: white;
+    height: 100vh;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container Style */
+.container {
+    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+    border-radius: 15px;
+    padding: 30px;
+    width: 100%;
+    max-width: 600px;
+    margin-left:385px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.6);
+    text-align: center;
+    align-items: center;
+}
+
+/* Heading Style */
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-shadow: 2px 2px 8px rgba(141, 34, 176, 0.8);
+    text-align: center;
+}
+
+/* Label Style */
+label {
+    font-size: 1rem;
+    text-align: left;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Input and Select Styles */
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* Button Style */
+button {
+    background-color: #ffffff;
+    color: #1d0229;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #dac1ef;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(2px);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    input, select {
+        font-size: 0.9rem;
+    }
+
+    button {
+        font-size: 1rem;
+    }
+}
