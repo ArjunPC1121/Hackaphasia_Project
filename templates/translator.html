@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translate and Speak</title>
+    <link rel="stylesheet" href="/static/translator.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Translate</h1>
+        
+        <!-- Text Input for Original Text -->
+        <textarea id="inputText" placeholder="Enter text to translate..."></textarea>
+
+        <!-- Language Dropdown -->
+        <select id="languageSelect">
+            <option value="kn">Kannada</option>
+            <option value="ta">Tamil</option>
+            <option value="hi">Hindi</option>
+        </select>
+
+        <!-- Translate and Speak Button -->
+        <button onclick="translateText()">Translate</button>
+
+        <!-- Display Translated Text -->
+        <div id="translatedText" class="translatedText"></div>
+    </div>
+
+    <script src="/static/translator.js"></script> <!-- Link to your JS file -->
+</body>
+</html>

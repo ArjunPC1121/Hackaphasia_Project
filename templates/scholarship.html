@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scholarship Form</title>
+</head>
+<body>
+    <h2>Scholarship Application</h2>
+    <form action="/eligibility" method="POST">
+        <label for="cgpa">CGPA:</label><br>
+        <input type="text" id="cgpa" name="cgpa" required><br><br>
+
+        <label for="income">Income:</label><br>
+        <input type="number" id="income" name="income" required><br><br>
+
+        <label for="citizen">Citizen:</label><br>
+        <select id="citizen" name="citizen">
+            <option value="US">US</option>
+            <option value="Canada">Canada</option>
+            <option value="India">India</option>
+            <option value="UK">UK</option>
+            <option value="Any">Any</option>
+        </select><br><br>
+
+        <label for="degree">Degree:</label><br>
+        <select id="degree" name="degree">
+            <option value="Bachelors">Bachelors</option>
+            <option value="Masters">Masters</option>
+            <option value="Any">Any</option>
+        </select><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+<script src="/static/scholarship.js"></script>
+</html>

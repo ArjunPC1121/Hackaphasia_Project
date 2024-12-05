@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/login.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>BRAIN MAP|LOGIN</title>
+</head>
+
+<body>
+    
+    <div class="backdrop">
+        <div class="wrapper">
+
+            <div class="form-box-login">
+                <h2 class="login-head">LOGIN</h2>
+                <form action="#">
+                    <div class="input-login">
+                        <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                        <input type="email" id="Email" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-login">
+                        <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                        <input type="password" id="Password" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="remember-box">
+                        <label><input type="checkbox">Remember Me</label>
+                        <a class="link" href="#">Forgot Password?</a>
+                    </div>
+                    <button type="submit" class="btn" id="Login">LOGIN</button>
+                    <div class="register">
+                        <p>Don't have an account?<a class="register-link" href="{{url_for("register")}}"> REGISTER</a></p>
+                    </div>
+                </form>
+            </div>
+            <div class="form-box-register">
+                <h2 class="login-head">REGISTRATION</h2>
+                <form action="#">
+                    <div class="input-login">
+                        <span class="icon"><ion-icon name="person"></ion-icon></span>
+                        <input type="text" id="Username" required>
+                        <label>Username</label>
+                    </div>
+                    <div class="input-login">
+                        <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                        <input type="email" id="RegEmail" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-login">
+                        <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                        <input type="password" id="RegPassword" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="remember-box">
+                        <label><input type="checkbox">I agree to the Terms & Conditions</label>
+                    </div>
+                    <button type="submit" class="btn" id="Register">REGISTER</button>
+                    <div class="login">
+                        <p>Already have an account?<a class="login-link" href="{{url_for("register")}}"> LOGIN</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+<div id="result-box">
+<h3 id="result"></h3>
+</div>
+
+</body>
+<script src="login.js"></script>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recommended Courses</title>
+</head>
+<body>
+    <h1>Recommended Courses</h1>
+    {% if recommended_courses %}
+        {% for course in recommended_courses %}
+            <h2>{{ course['course_title'] }} - {{ course['course_difficulty'] }}</h2>
+        {% endfor %}
+    {% else %}
+        <p>No courses found for the selected difficulty level.</p>
+    {% endif %}
+</body>
+</html>
