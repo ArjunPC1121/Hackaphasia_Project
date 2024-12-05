@@ -5,10 +5,10 @@ from utilities.scholarship import train,scholarship
 from utilities.translator import translate_and_speak
 app = Flask(__name__)
 
-data = pd.read_csv("categorized_courses.csv")
-data.drop_duplicates(inplace=True)
-data['course_difficulty'] = data['course_difficulty'].fillna('Beginner')  # Default to Beginner
-data['course_difficulty'] = data['course_difficulty'].str.capitalize()
+dataset = pd.read_csv("categorized_courses.csv")
+dataset.drop_duplicates(inplace=True)
+dataset['course_difficulty'] = dataset['course_difficulty'].fillna('Beginner')  # Default to Beginner
+dataset['course_difficulty'] = dataset['course_difficulty'].str.capitalize()
 
 @app.route("/")
 @app.route("/home")
@@ -25,7 +25,7 @@ def register():
 
 @app.route("/quizzes")
 def quiz():
-    recommended_courses = recommend_by_difficulty(data, 'Beginner')
+    recommended_courses = recommend_by_difficulty(dataset, 'Beginner')
     print(recommended_courses.to_dict(orient='records'))  # Debugging step
     return render_template("quiz.html", recommended_courses=recommended_courses.to_dict(orient='records'))
 
@@ -51,6 +51,18 @@ def translate_page():
 @app.route("/courses")
 def courses():
     return render_template("courses.html")
+
+@app.route("/gtBeg",methods=['GET'])
+def gtBeg():
+  
+    category = request.args.get('category')
+    difficulty = request.args.get('difficulty')
+    if not category or not difficulty:
+        return "Missing parameters", 400
+
+    course_recomm = recommend_by_difficulty(dataset, difficulty, category)
+    return render_template("course_recomm.html", course_recomm=course_recomm)
+
 
 @app.route("/scholarship")
 def scholarship_page():

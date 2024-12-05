@@ -1,9 +1,5 @@
-function python(){
-    window.location.href="/python"
+function gt() {
+    const category = "General Technology";
+    const difficulty = "Beginner";
+    window.location.href = `/gtBeg?category=${encodeURIComponent(category)}&difficulty=${encodeURIComponent(difficulty)}`;
 }
-function c(){
-    window.location.href="/c"
-}
-function java(){
-    window.location.href="/java"
-
