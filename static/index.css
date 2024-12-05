@@ -1,0 +1,83 @@
+/* Apply a full-page background GIF */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    height: 100vh;
+    background-image: url('/static/background.gif'); /* Path to your GIF */
+    background-size: cover; /* Makes the GIF cover the whole background */
+    background-position: center; /* Centers the GIF */
+    background-repeat: no-repeat; /* Prevents repeating the GIF */
+}
+
+/* Container to align text and button */
+.container {
+    text-align: center;
+    background-color: rgb(255, 255, 255); /* Semi-transparent background for contrast */
+    padding: 50px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 500px;
+    color: white;
+}
+
+/* Heading Style */
+h1 {
+    font-size: 4rem;
+    color: white;
+    margin-bottom: 10px;
+    font-weight: 700;
+    text-shadow: 2px 2px 8px rgb(141, 34, 176); /* Shadow to make the text stand out */
+    margin-top: 100px;
+    margin-left: 70px;
+
+}
+
+/* h4 Style */
+h4 {
+    font-size: 1.5rem;
+    color: white;
+    margin: 5px 0; /* 20px gap between h1 and button */
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+/* Button Styling */
+button {
+    background-color: #ffffff; /* Button color */
+    color: rgb(0, 0, 0);
+    padding: 15px 30px;
+    border: none;
+    margin: 10px auto; /* Adjust the margin to center the button */
+    border-radius: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin-left: 200px;
+}
+
+button:hover {
+    background-color: #dac1ef; /* Darker Button color on hover */
+    transform: translateY(-2px); /* Slight hover effect */
+}
+
+button:active {
+    transform: translateY(2px); /* Button press effect */
+}
+
+/* Add responsiveness */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    button {
+        padding: 12px 25px;
+        font-size: 1rem;
+    }
+
+    a {
+        font-size: 1rem;
+    }
+}
