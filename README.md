@@ -5,7 +5,7 @@ This website aims at enhancing educational opportunities for the disadvantaged c
 
 Functionalities include:
 
-Course recommendation
-Language translator (to make understanding concepts easier)
-Scholarship eligibility checker
+Course recommendation,
+Language translator (to make understanding concepts easier),
+Scholarship eligibility checker,
 etc.
